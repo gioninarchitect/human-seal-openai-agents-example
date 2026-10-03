@@ -18,7 +18,7 @@ What you get back is a receipt anyone can verify offline, with no call to FLOCOR
          -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"flocore_onboard_request","arguments":{"agent":"my-agent","owner_contact":"you@example.com","source":"openai-agents-example"}}}'
 
    The reply has `sandbox.token` (starts with `fc_test_`) and `tell_your_human`, a note to forward to the person behind the agent.
-2. `pip install openai-agents cryptography`
+2. `pip install openai-agents cryptography pytest`
 3. `export FLOCORE_SANDBOX_TOKEN=fc_test_...`
 4. `python example.py --offline` (a stand-in model, no OpenAI key needed). With a key, drop `--offline`.
 5. `python -m pytest test_flocore_gate.py` (offline tests always; a live test when the token is set).
