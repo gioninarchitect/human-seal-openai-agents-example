@@ -49,3 +49,6 @@ approved cannot be swapped afterwards, and FLOCORE never sees the arguments.
 - This has not been tested with a real OpenAI model, only the stand-in.
 
 Docs: https://humanseal.world/quickstart.html . Limits: https://humanseal.world/limitations.html . Verify a receipt in the browser: https://humanseal.world/verify.html
+
+## Agent payments
+Two further sandbox examples, for an agent that pays and a person who approves the exact payment or a spending limit, are in [payments/](payments/README.md). They are AP2-shaped, not AP2.
